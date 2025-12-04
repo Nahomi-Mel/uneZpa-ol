@@ -27,5 +27,4 @@ jobs:
     - name: Run mypy
       run: mypy UNEZPAnOL.py || true
     - name: Run tests
-    Prueba de ejecución del pipeline.
       run: pytest --cov=UNEZPAnOL || true
