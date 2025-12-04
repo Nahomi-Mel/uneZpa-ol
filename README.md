@@ -21,4 +21,6 @@ Evidencias necesarias se encuentran en la carpeta /evidencias:
 Pipeline ejecutándose en GitHub Actions
 Resultado de pylint
 Resultado de mypy
+
+Prueba de ejecución del pipeline.
 Pruebas pytest + coverage
