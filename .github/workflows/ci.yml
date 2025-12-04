@@ -22,10 +22,10 @@ jobs:
         pip install pylint mypy pytest pytest-cov
 
     - name: Run pylint
-      run: pylint UNEZPAÑOL.py || true
+      run: pylint UNEZPAnOL.py || true
 
     - name: Run mypy
-      run: mypy UNEZPAÑOL.py || true
+      run: mypy UNEZPAnOL.py || true
 
     - name: Run tests
-      run: pytest --cov=UNEZPAÑOL || true
+      run: pytest --cov=UNEZPAnOL || true
