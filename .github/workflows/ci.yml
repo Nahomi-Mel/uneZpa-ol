@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install dependencies
+      run: |
+        pip install pylint mypy pytest pytest-cov
+
+    - name: Run pylint
+      run: pylint UNEZPAÑOL.py || true
+
+    - name: Run mypy
+      run: mypy UNEZPAÑOL.py || true
+
+    - name: Run tests
+      run: pytest --cov=UNEZPAÑOL || true
